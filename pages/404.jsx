@@ -19,7 +19,7 @@ useEffect(() => {
     return (
         <div>
             <h3>page not found</h3>
-            <p>Go to <Link href='/'> <a >Home Page</a></Link></p>
+<Link href='/'><a>Home Page</a></Link>
         </div>
     )
 }
