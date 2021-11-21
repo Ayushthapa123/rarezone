@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import {useRouter} from 'next/router';
+import Link from 'next/link'
 
 export default function Notfound() {
 
@@ -18,7 +19,7 @@ useEffect(() => {
     return (
         <div>
             <h3>page not found</h3>
-            <p>Go to <a href='/'>Home Page</a></p>
+            <p>Go to <Link href='/'> <a >Home Page</a></Link></p>
         </div>
     )
 }
