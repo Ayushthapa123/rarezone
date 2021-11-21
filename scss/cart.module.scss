@@ -1,0 +1,25 @@
+.cart {
+    background-color: whitesmoke;
+    width: 100%;
+    height:auto;
+    padding:30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.products {
+    width:96%;
+    min-height:400px;
+    background-color: white;
+    margin: auto;
+    .titles {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        text-align: center;
+        padding:30px;
+        box-sizing: border-box;
+    }
+    hr {
+        color:whitesmoke;
+    }
+}

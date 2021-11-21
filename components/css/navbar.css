@@ -1,0 +1,318 @@
+.topnav {
+    position: relative;
+    width:100%;
+    height:30px;
+    background-color:whitesmoke;
+    font-size: 12px;
+    color: royalblue;
+    border-bottom: 1px solid rgb(224, 213, 213);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.topnav .left-topnav {
+ 
+    float:left;
+    margin-left: 10%;
+    margin-top: 7px;
+}
+.topnav .left-topnav span {
+    margin-left: 9px;
+}
+
+.topnav .right-topnav {
+float: right;
+margin-right: 10%;
+margin-top: 7px;
+}
+
+
+
+
+
+.nav {
+    width: 100%;
+    height:70px;
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    box-shadow: 0px 3px 5px -3px rgb(41, 35, 35);  
+    z-index: 99;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+}
+.toggler {
+    display: none;
+    cursor: pointer;
+}
+.toggler span {
+    height:35px;
+    width:35px;
+    font-size: 35px;
+    position: relative;
+    top:15px;
+    left:5px;
+}
+.nav .logo {
+    width:100%;
+    height:70px;
+    
+}
+.nav .logo a img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.nav .search {
+    text-align: center;
+
+}
+.nav .search select {
+    margin:0px;
+    margin-top: 10px;
+    padding:0px;
+    width:auto;
+    width: 50px;
+    height:50px;
+
+}
+
+.nav .search input {
+    margin:0px;
+    margin-top: 10px;
+    padding:0px;
+    width:70%;
+    height:50px;
+}
+.nav .search button {
+    margin:0px;
+    margin-top: 10px;
+    padding:0px;
+    width:15%;
+    height:50px;
+    border:0px;
+    background-color: royalblue;
+}
+.nav .search button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.nav .user {
+    text-align: center;
+    margin:30px;
+}
+.nav .user a {
+    padding:10px;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.nav .user a:hover {
+    background-color: royalblue;
+}
+.nav .user a span {
+    margin:5px;
+    font-size: 15px;
+
+}
+
+.user .loginsignup {
+    background-color:wheat;
+    border:1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    width:200px;
+    height:auto;
+    margin-top: 20px;
+    display: none;
+    
+}
+.loginsignup a {
+    padding: 5px;
+    background-color: rgb(192, 198, 218);
+    
+}
+.li a {
+    font-size: 12px;
+}
+
+.cart {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+.cart span sup {
+    font-size: 12px;
+}
+
+.sidebar-container {
+    width:100%;
+    height:800px;
+    background-color:transparent;
+    z-index: 998;
+    position: fixed;
+    top:0px;
+    background-color: white;
+    opacity: 0.9;
+    left:-100%;
+    transition: 0.2s all linear 0s;
+}
+
+.sidebar {
+    width:300px;
+    height:800px;
+    padding:1px;
+    margin:auto;
+    margin-top: 20px;
+    background-color: rgb(56, 33, 33);
+    z-index: 999;
+    border-radius: 10px;
+
+}
+.cross {
+
+    height: 50px;
+    width:50px;
+    font-size: 40px;
+    color:white;
+    float:right;
+    cursor: pointer;
+}
+
+.sidebarcategories {
+    width:300px;
+    height:auto;
+    text-align: center;
+    color:rgb(211, 207, 235);
+}
+.sidebarcategories hr {
+    opacity: 0.3;
+    width:80%;
+}
+.sidebarlogin div {
+width:130px;
+height:40px;
+background-color: rgb(48, 15, 15);
+text-align: center;
+margin: auto;
+padding-top: 6px;
+margin-top: 10px;
+border-radius: 3px;
+
+}
+.sidebarlogin div a {
+    font-size: 20px;
+    padding-top: 30px;
+    color:white;
+}
+
+
+.showsidebar {
+    left:0px;
+}
+
+
+
+@media screen and (max-width:1100px) {
+
+    .nav .user {
+        margin:10px;
+        margin-top: 30px;
+    }
+    .nav .user a {
+        padding:10px;
+        font-size: 14px;
+        border-radius: 5px;
+        
+    }
+
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .nav {
+        min-height: 140px;
+        height:auto;
+        display:block;
+    }
+
+    .nav .toggler {
+        display: block;
+        width:70px;
+        height:70px;
+        position: absolute;
+        left:0px;
+
+    }
+
+    .nav .logo {
+        width:140px;
+        height:70px;
+        position: absolute;
+        left:80px;
+    }
+
+    .nav .user {
+        display:none;
+    }
+
+    .nav .search {
+        width:100%;
+        height:70px;
+        position: absolute;
+        top:70px;
+    }
+
+    .nav .cart {
+        position: absolute;
+        top:0px;
+        right:10px;
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:500px) {
+.topnav {
+    font-size: 10px;
+}
+
+    .topnav .left-topnav {
+        margin-left:2%;
+    }
+    .topnav .left-topnav span {
+        margin-left: 2px;
+    }
+    
+    .topnav .right-topnav {
+    margin-right: 2%;
+    }
+
+
+    .nav .search select {
+        width: 45px; 
+        height:40px;
+    }
+    .nav .search input {
+        width:60%;
+        height:40px;
+    }
+
+    .nav .search button {
+        height:40px;
+    }
+
+    
+}
+
