@@ -50,10 +50,10 @@ function logout() {
 <Link href='' ><div><span >  </span> Best Offer</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Men's Fashion</div></Link>
+<Link href=''><div><span >  </span> Mens Fashion</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Women's Fashion</div></Link>
+<Link href=''><div><span >  </span> Womens Fashion</div></Link>
 </div>
 <div className={styles.link}>
 <Link href=''><div><span >  </span> Electronics</div></Link>

@@ -9,7 +9,7 @@ export default function Index() {
           <Allnav/>
         <div className={styles.mfashion}>
           
-            <h2>Men's Fashion</h2>
+            <h2>Mens Fashion</h2>
 
 <div className={styles.products}>
 

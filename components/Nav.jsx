@@ -32,13 +32,13 @@ const Toggle=()=> {
 </div>
 
              <div className='logo'>
-<a href='/'><img src='/logo.png' alt='logo'/></a>
+<Link href='/'><a ><img src='/logo.png' alt='logo'/></a></Link>
              </div>
              <div className='search'>
 <select>
     <option>All</option>
-        <option value='mens-fashion'>Men's Fashion</option>
-        <option value='womens-fashion'>Women's Fashion</option>
+        <option value='mensfashion'>Mens Fashion</option>
+        <option value='womensfashion'>Womens Fashion</option>
         <option value='sports'>Sports</option>
         <option value='electronics'>Electronics</option>
         <option value='gifts'>Gifts</option>
@@ -51,7 +51,7 @@ const Toggle=()=> {
 
              </div>
              <div className='user'>
-<a href='#'><span><FaUserCircle/></span>Sign In</a>
+<Link href='#'><a ><span><FaUserCircle/></span>Sign In</a></Link>
 <div className='loginsignup'>
  <Link href='#' className='li'><a>Log In</a></Link>
  <p>New Customer?</p>
@@ -66,18 +66,18 @@ const Toggle=()=> {
 <div className='sidebar'>
     <div className='cross' onClick={Toggle}>X</div>
     <div className='sidebarlogin'>
-        <div><a href='#'>Log In</a></div>
-        <div><a href='#'>Sign Up</a></div>
+        <div><Link href='#'><a >Log In</a></Link></div>
+        <div><Link href='#'><a >Sign Up</a></Link></div>
     </div>
     <div className='sidebarcategories'>
      
-       <p> <a href='/mens-fashion'>Men's Fashion</a></p><hr/>
-        <p><a href='/womens-fashion'>Women's Fashion</a></p><hr/>
-        <p><a href='/electronics'>Electronics</a></p><hr/>
-        <p><a href='/sports'>Sports</a></p><hr/>
-        <p><a href='/books'>Books</a></p><hr/>
-        <p><a href='/gifts'>Gifts</a></p><hr/>
-        <p><a href='/bestoffers'>Best Offer</a></p><hr/>
+       <p> <Link href='/mensfashion'><a >Mens Fashion</a></Link></p><hr/>
+        <p><Link href='/womensfashion'><a >Womens Fashion</a></Link></p><hr/>
+        <p><Link href='/electronics'><a >Electronics</a></Link></p><hr/>
+        <p><Link href='/sports'><a >Sports</a></Link></p><hr/>
+        <p><Link href='/books'><a >Books</a></Link></p><hr/>
+        <p><Link href='/gifts'><a >Gifts</a></Link></p><hr/>
+        <p><Link href='/bestoffers'><a >Best Offer</a></Link></p><hr/>
     </div>
 </div>
 </div>

@@ -7,16 +7,16 @@ export default function Catogeries() {
         <div className={styles.categories}>
 
             <div className='offer'>
-            <Link href='/mens-fashion'><a>
+            <Link href='/mensfashion'><a>
                 <img src='/categories/men.jpg' alt='mens fashion'/>
-                <h4>Men's Fashion</h4>
+                <h4>Mens Fashion</h4>
                 </a>
                 </Link>
             </div>
             <div className='offer'>
-            <Link href='/womens-fashion'><a>
+            <Link href='/womensfashion'><a>
                 <img src='/categories/women.jpg' alt='womens fashion'/>
-                <h4>Women's Fashion</h4>
+                <h4>Womens Fashion</h4>
                 </a>
                 </Link>
             </div>

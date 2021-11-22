@@ -456,8 +456,8 @@ setError('please select a valid image type png or jpeg or jpg');
     <select name='category'  value={category}  id='category'
     onChange={(e)=> setCategory(e.target.value)} required>
          <option> select</option>
-        <option value='mens-fashion'>Men's Fashion</option>
-        <option value='womens-fashion'>Women's Fashion</option>
+        <option value='mens-fashion'>Mens Fashion</option>
+        <option value='womens-fashion'>Womens Fashion</option>
         <option value='sports'>Sports</option>
         <option value='electronics'>Electronics</option>
         <option value='gifts'>Gifts</option>
