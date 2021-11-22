@@ -47,26 +47,26 @@ function logout() {
 <Link href='/superadmin/addproduct'><div><span >  </span> Addproduct</div></Link>
 </div>
 <div className={styles.link}>
-<Link href='' ><div><span >  </span> Best Offer</div></Link>
+<Link href='#' ><div><span >  </span> Best Offer</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Mens Fashion</div></Link>
+<Link href='#'><div><span >  </span> Mens Fashion</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Womens Fashion</div></Link>
+<Link href='#'><div><span >  </span> Womens Fashion</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Electronics</div></Link>
+<Link href='#'><div><span >  </span> Electronics</div></Link>
 </div>
 <div className={styles.link}>
-<Link href=''><div><span >  </span> Sports</div></Link>
+<Link href='#'><div><span >  </span> Sports</div></Link>
 </div>
 <div className={styles.link}>
 <Link href='#'><div><span > </span> Books</div></Link>
 </div>
 
 <div className={styles.link}>
-<Link href=''><div><span > </span> Gifts</div></Link>
+<Link href='#'><div><span > </span> Gifts</div></Link>
 </div>
 <div className={styles.link}>
 <Link href='#' ><div  onClick={logout}><span > <FiLogOut/> </span> Logout</div></Link>
