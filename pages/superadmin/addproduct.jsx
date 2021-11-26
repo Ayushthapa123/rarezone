@@ -23,6 +23,7 @@ const [availablequantity,setAvailablequantity]=useState('');
 const [category,setCategory]=useState('');
 const [tags, setTags]=useState([]);
 const [subtag,setSubtag]=useState('');
+const [ptag,setPtag]=useState('');
 const [discountid,setDiscountid]=useState([])
 
 
@@ -159,6 +160,7 @@ async function HandleSubmit(e) {
         colors,
         tags,
         subtag,
+        ptag,
         generalfeatures,
         specialfeatures,
         searchq,
@@ -181,7 +183,7 @@ async function HandleSubmit(e) {
        updateDoc(updateRef, {
            docid:docRef.id,
        });
-       
+        alert('Added successful');
    
        })
 
@@ -456,8 +458,8 @@ setError('please select a valid image type png or jpeg or jpg');
     <select name='category'  value={category}  id='category'
     onChange={(e)=> setCategory(e.target.value)} required>
          <option> select</option>
-        <option value='mens-fashion'>Mens Fashion</option>
-        <option value='womens-fashion'>Womens Fashion</option>
+        <option value='mensfashion'>Mens Fashion</option>
+        <option value='womensfashion'>Womens Fashion</option>
         <option value='sports'>Sports</option>
         <option value='electronics'>Electronics</option>
         <option value='gifts'>Gifts</option>
@@ -480,7 +482,11 @@ setError('please select a valid image type png or jpeg or jpg');
     <input type='date'   id='date' name='date' value={date} required 
     onChange={(e)=> setDate(e.target.value)}/>  <br/>
 </div>
-
+<div>
+    <label htmlFor='ptag'>Product Tag:</label><br/>
+    <input type='text'   id='ptag' name='ptag' value={ptag} 
+    onChange={(e)=> setPtag(e.target.value)}/>  <br/>
+</div>
 
 
 

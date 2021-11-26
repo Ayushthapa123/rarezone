@@ -7,6 +7,7 @@ import '../components/admin/template/css/template.css'
 
 
 import {AuthProvider} from '../contexts/AuthContext'
+import {CartProvider} from '../contexts/CartContext'
 
 
 
@@ -16,10 +17,12 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-
+<CartProvider>
   <AuthProvider>
   <Component {...pageProps} />
   </AuthProvider>
+</CartProvider>
+
   </>
   );
 }

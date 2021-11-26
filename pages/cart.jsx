@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Head from 'next/head';
+
+import { CartContext } from '../contexts/CartContext';
 
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
@@ -7,6 +9,9 @@ import Footer from '../components/Footer';
 import styles from '../scss/cart.module.scss';
 
 export default function Cart() {
+
+    const [currentCart,setCurrentCart]=useContext(CartContext);
+
     return (
         <div>
 
@@ -20,11 +25,14 @@ export default function Cart() {
 <h1>My Cart</h1>
 
 <div className={styles.products}>
-    <div className={styles.titles}>
-        <div>Products</div>
-        <div>Quantity</div>
-        <div>Price</div>
+
+{currentCart.map((p,index)=> (
+    <div key={index}>
+        <h2>{p.name}</h2>
+        <h3>{p.price}</h3>
     </div>
+))}
+
 <hr/>
 
 

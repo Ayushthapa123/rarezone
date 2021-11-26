@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Link from 'next/link';
+
+import { CartContext } from '../contexts/CartContext';
 
 
 import {FaShoppingCart} from 'react-icons/fa'
@@ -9,6 +11,9 @@ import {FcMenu} from 'react-icons/fc'
 
 
 export default function Nav() {
+
+    const [currentCart,setCurrentCart]=useContext(CartContext);
+
 
 const Toggle=()=> {
     let x=document.querySelector('.sidebar-container');
@@ -59,7 +64,7 @@ const Toggle=()=> {
 </div>
              </div>
              <div className='cart'>
-<Link href='#'><a><span><FaShoppingCart/><sup><sup>(0 Items)</sup></sup></span></a></Link>
+<Link href='/cart'><a><span><FaShoppingCart/><sup><sup>({currentCart.length} Items)</sup></sup></span></a></Link>
              </div>
             </div>
 <div className='sidebar-container' id='sbc'>

@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs,doc,addDoc,updateDoc} from 'firebase/firestore';
+import { getFirestore, collection, getDocs,doc,addDoc,updateDoc, query, where} from 'firebase/firestore';
 
 import { getDatabase, ref, onValue} from "firebase/database";
 import {getStorage, uploadBytes, uploadBytesResumable, getDownloadURL,ref as sRef} from 'firebase/storage'
@@ -32,7 +32,10 @@ const app = initializeApp(firebaseConfig);
 
 export const storage = getStorage(app);
 
-export {doc,getDocs,getDatabase,ref,sRef,onValue,getFirestore,collection,getStorage, uploadBytes,addDoc,updateDoc,uploadBytesResumable, getDownloadURL}
+export {doc,getDocs,getDatabase,ref,sRef,
+  onValue,getFirestore,collection,getStorage, 
+  uploadBytes,addDoc,updateDoc,uploadBytesResumable, 
+  getDownloadURL,query,where}
 
 // // Get a list of cities from your database
 // async function getCities(db) {

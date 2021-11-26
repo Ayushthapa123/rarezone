@@ -1,7 +1,7 @@
 
 module.exports = {
   images: {
-    domains: ['images.ctfassets.net'],
+    domains: ['firebasestorage.googleapis.com'],
     // loader: "imgix",
     // path: "",
    
